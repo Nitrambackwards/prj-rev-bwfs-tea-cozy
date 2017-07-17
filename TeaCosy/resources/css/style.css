@@ -1,0 +1,151 @@
+/*Main body rules*/
+body{
+  margin: 0px;
+  font-family: helvetica;
+  font-size: 22px;
+  background-color: black;
+}
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 10px;
+  color: seashell;
+  opacity: 0.9;
+}
+
+/*debug rule to visualise div placement*/
+/*div {
+  border: 1px solid black;
+}*/
+
+/*Header*/
+header {
+  position: fixed;
+  background-color: black;
+  border-bottom: 1px solid seashell;
+  height: 69px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+header img {
+  height: 50px;
+  margin-left: 10px;
+}
+nav {
+  flex-grow: 1;
+  text-align: right;
+}
+nav span {
+  margin: 0px 10px;
+}
+header a {
+  color: seashell;
+}
+
+/*Main Content*/
+.mainContent {
+  padding-top: 69px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.textContent {
+  width: 100%;
+  text-align: center;
+  color: seashell;
+  background-color: black;
+}
+
+/*Mission Section*/
+#section1 {
+  margin-top: 20px;
+  height: 700px;
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  background-image: url("../images/img-mission-background.jpg");
+}
+
+/*Products Section*/
+#section2 {
+  margin-top: 20px;
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.products img {
+  height: 200px;
+  width: 300px;
+}
+.product {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+/*Locations Section*/
+#section3 {
+  margin-top: 20px;
+  height: 500px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../images/img-locations-background.jpg");
+}
+.section3text {
+  width: 1200px;
+  text-align: center;
+  color: seashell;
+}
+.locations {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.location {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 5px 20px;
+}
+.location p {
+  margin: 22px 0px;
+}
+
+/*Contact Section*/
+#section4 {
+  margin-top: 20px;
+  height: 200px;
+  text-align: center;
+  color: seashell;
+  background-color: black;
+}
+#section4 p {
+  padding: 0px;
+  margin: 30px 0px;
+}
+
+/*Footer*/
+footer {
+  margin-top: 20px;
+  background-color: black;
+  height: 69px;
+  width: 100%;
+  text-align: left;
+}
+footer h5 {
+  margin-left: 20px;
+  padding: 0px;
+}
